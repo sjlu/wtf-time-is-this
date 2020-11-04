@@ -8,7 +8,7 @@ var app = new Vue({
     convert: function () {
       var m = moment()
 
-      if (_.parseInt(this.input)) {
+      if (!isNaN(this.input) && !isNaN(parseFloat(this.input))) {
         if (this.input.length <= 10) {
           m = moment(this.input, 'X')
         }
