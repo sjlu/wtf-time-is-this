@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" context="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+
+    <title>WTF time is this?</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div id="app" style="max-width: 640px; margin: 40px auto;">
+      <h1 style="text-align: center">WTF time is this?</h1>
+
+      <form v-on:submit.prevent="convert">
+        <input type="text" class="u-full-width" v-model="input" v-on:input="convert()" />
+      </form>
+
+      <h3 style="text-align: center">{{ output }}</h3>
+    </h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
